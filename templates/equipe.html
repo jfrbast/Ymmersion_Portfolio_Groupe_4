@@ -1,0 +1,87 @@
+{{define "equipe"}}
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Présentation de l'équipe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/static/css/equipe.css">
+</head>
+
+<body>
+{{ template "header" }}
+<main>
+    <div class="team-title">
+        <h1>Présentation des membres de l'équipe</h1>
+    </div>
+    <div class="swiper-container">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <img src="/static/images/bastien.png" alt="Bastien">
+                        <p>Bastien</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <img src="/static/images/thibaut.png" alt="Thibaut">
+                        <p>Thibaut</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <img src="/static/images/nans.png" alt="Nans">
+                        <p>Nans</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <img src="/static/images/omrane.png" alt="Omrane">
+                        <p>Omrane</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <img src="/static/images/enzo.png" alt="Enzo">
+                        <p>Enzo</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="image-box">
+                        <img src="/static/images/lilian.png" alt="Lilian">
+                        <p>Lilian</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 20,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+{{ template "footer" }}
+</body>
+
+</html>

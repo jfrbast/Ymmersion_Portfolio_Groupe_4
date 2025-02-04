@@ -4,7 +4,7 @@
     box-sizing: border-box ;
 }
 
-header {
+.header {
 
     font-weight: bold;
     width: 100%;
@@ -16,7 +16,7 @@ header {
     padding: 30px 30px;
 }
 
-ul {
+.header-ul {
 
     font-family: 'Petite_lettre', sans-serif;
     display: flex;
@@ -24,12 +24,15 @@ ul {
     width: 15vw;
 
 }
-
-li{
+.header-liste{
     list-style: none;
     color: #F5F5DC;
-}
 
-h1{
+}
+.headerh{
     color : #F5F5DC;
 }
+
+
+
+

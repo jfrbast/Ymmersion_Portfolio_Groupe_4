@@ -1,0 +1,68 @@
+/* Fond marron foncé */
+body {
+    background-color: #3d2b1f; /* Marron foncé */
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centrer le Swiper */
+.swiper-container {
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Swiper général */
+.swiper {
+    width: 100%;
+}
+
+/* Style des slides */
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: none;
+}
+
+/* Conteneur des images */
+.image-box {
+    background: #8b5a2b; /* Marron clair */
+    border: 4px solid #a67c52; /* Contour marron clair */
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* Effet au survol */
+.image-box:hover {
+    transform: scale(1.05);
+}
+
+/* Images */
+.image-box img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #a67c52; /* Contour marron clair */
+}
+
+/* Texte sous l'image */
+.image-box p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}

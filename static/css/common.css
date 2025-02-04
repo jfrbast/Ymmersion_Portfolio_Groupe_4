@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'Grosse_lettre';
+    src: url(http://localhost:8080/static/font/Grosse_lettres.woff);
+}
+@font-face {
+    font-family: 'Petite_lettre';
+    src: url(http://localhost:8080/static/font/Petite_lettres.woff);
+}

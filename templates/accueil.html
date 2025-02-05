@@ -1,6 +1,5 @@
 {{define "accueil"}}
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,14 +8,38 @@
     <link rel="stylesheet" href="/static/css/accueil.css">
     <link rel="stylesheet" href="/static/css/common.css">
 </head>
-{{ template "header" }}
 
 <body>
-
-<h1>Test</h1>
-
-</body>
+{{ template "header" }}
+<main class="PageAccueil">
+    <div class="Texte">
+        <h1 class="Titre">WELCOME TO OUR PORTFOLIO YMMERSION</h1>
+    </div>
+    <div class="Texte1">
+    <h2 class="PetitTitre">Our Job :<br>
+        Solve creatives and challenging tasks while developing a website.</h2>
+    </div>
+    <div class="Accueil">
+        <div class="paragraphe">
+            <h3 class="titreparag">What you'll find</h3>
+            <p>This portfolio documents our progression during the tasks, demonstrate our logic, our thoughts and the results.</p>
+        </div>
+        <div class="paragraphe">
+            <h3 class="titreparag">What we prepared for you</h3>
+            <p>A detailed presentation of every tasks
+                Our strategies and steps followed to solve those tasks
+                Every solution explained</p>
+        </div>
+        <div class="paragraphe">
+            <h3 class="titreparag">Our approach</h3>
+            <p>Technologies used : HTML/CSS & Golang.
+               Team-work and project management using GitHub.</p>
+        </div>
+    </div>
+</main>
 {{ template "footer" }}
+</body>
+
 </html>
 
 {{end}}

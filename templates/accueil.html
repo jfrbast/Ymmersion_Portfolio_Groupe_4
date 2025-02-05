@@ -1,5 +1,6 @@
 {{define "accueil"}}
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="/static/css/accueil.css">
     <link rel="stylesheet" href="/static/css/common.css">
 </head>
+
 
 <body>
 {{ template "header" }}
@@ -19,20 +21,21 @@
     <h2 class="PetitTitre">Our Job :<br>
         Solve creatives and challenging tasks while developing a website.</h2>
     </div>
+    <a  href="/team"><button class="button" role="button" >See all the challenges</button></a>
     <div class="Accueil">
         <div class="paragraphe">
             <h3 class="titreparag">What you'll find</h3>
-            <p>This portfolio documents our progression during the tasks, demonstrate our logic, our thoughts and the results.</p>
+            <p class="parag">This portfolio documents our progression during the tasks, demonstrate our logic, our thoughts and the results.</p>
         </div>
         <div class="paragraphe">
             <h3 class="titreparag">What we prepared for you</h3>
-            <p>A detailed presentation of every tasks
+            <p class="parag">A detailed presentation of every tasks
                 Our strategies and steps followed to solve those tasks
                 Every solution explained</p>
         </div>
         <div class="paragraphe">
             <h3 class="titreparag">Our approach</h3>
-            <p>Technologies used : HTML/CSS & Golang.
+            <p class="parag">Technologies used : HTML/CSS & Golang.
                Team-work and project management using GitHub.</p>
         </div>
     </div>

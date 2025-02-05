@@ -4,11 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/static/css/equipe.css">
     <link rel="stylesheet" href="/static/css/common.css">
-    <link rel="stylesheet" href="/static/css/accueil.css">
 </head>
-<body>
-    <h1 class="h-portfabio">PORTFABIO</h1>
+  <body>
+    <main>
+        <div class="fab-title">
+            <h1 class="h-portfabio">PORTFABIO</h1>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="image-box">
+                            <img src="/static/images/porte.jpg" alt="porte">
+                            <p>Porte</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-box">
+                            <img src="/static/images/fabiodevantporte.jpg" alt="fabporte">
+                            <p>Fabio porte</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-box">
+                            <img src="/static/images/fabiomonteporte.jpg" alt="fabmonteporte">
+                            <p>Fabio monte la porte</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-box">
+                            <img src="/static/images/fabioescaladeporte.jpg" alt="fabclimporte">
+                            <p>Fabio escalade la porte</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-box">
+                            <img src="/static/images/portfabio.jpg" alt="fabioporté">
+                            <p>Portfabio</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="image-box">
+                            <img src="/static/images/fabioporteplot.jpg" alt="fabplot">
+                            <p>Fabplot</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 20,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
 </body>
 </html>
 

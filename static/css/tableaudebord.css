@@ -4,21 +4,34 @@ body {
     margin: 0;
 }
 
-.container {
-    background-color: #6F4D38;
-    display: grid;
-    grid-template-columns: repeat(5, minmax(250px, 1fr));
-    gap: 20px;
-    width: 100%;
-    justify-content: space-evenly;
-    
-}
-
 h1 {
     text-align: center;
     color: #F5F5DC;
     font-family: 'Grosse_lettre';
     src: url(http://localhost:8080/static/font/Grosse_lettres.woff);
+}
+
+h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    padding: 10px;
+    line-height: 1.5;
+    color: #F5F5DC;
+    font-family: 'Petite_lettre';
+    src: url(http://localhost:8080/static/font/Petite_lettres.woff);
+}
+
+span {
+    font-family: 'Grosse_lettre';
+    src: url(http://localhost:8080/static/font/Grosse_lettres.woff);
+}
+
+p {
+    font-size: 18px;
+    padding: 10px;
+    line-height: 1.5;
+    color: #F5F5DC;
 }
 
 div {
@@ -30,6 +43,27 @@ div {
     padding-bottom: 50px;
     border-radius: 10px;
 }
+
+img {
+    position: relative;
+    padding: 5px;
+    top: 11px;
+    align-items: center;
+    width: 45px;
+    height: auto;
+    border-radius: 10px;
+}
+.container {
+    background-color: #6F4D38;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    justify-content: space-evenly;
+    
+}
+
+
 .day-card {
     background-color: #6F4D38;
     }
@@ -42,9 +76,9 @@ div {
     margin-top: 0;
 }
 
-
 .texte {
     font-weight: bold;
+<<<<<<< HEAD
 }
 
 p {
@@ -78,4 +112,6 @@ h2 {
     color: #F5F5DC;
     font-family: 'Petite_lettre';
     src: url(http://localhost:8080/static/font/Petite_lettres.woff);
+=======
+>>>>>>> bd9c7aff80739a6ab619c5157c59f1fd807d3d0a
 }

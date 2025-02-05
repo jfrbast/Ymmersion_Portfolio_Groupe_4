@@ -4,38 +4,25 @@ body {
     margin: 0;
 }
 
-h1 {
+.Title {
     text-align: center;
     color: #F5F5DC;
-  
-    font-family: 'Grosse_lettre';
-    src: url(http://localhost:8080/static/font/Grosse_lettres.woff);
+    font-family: 'Grosse_lettre', sans-serif;
+
 }
 
-h2 {
+.explication {
     text-align: center;
     padding: 10px;
     font-size: 18px;
-    padding: 10px;
     line-height: 1.5;
     color: #F5F5DC;
-    font-family: 'Petite_lettre';
-    src: url(http://localhost:8080/static/font/Petite_lettres.woff);
+    font-family: 'Petite_lettre', sans-serif;
 }
 
-span {
-    font-family: 'Grosse_lettre';
-    src: url(http://localhost:8080/static/font/Grosse_lettres.woff);
-}
-
-p {
-    font-size: 18px;
-    padding: 10px;
-    line-height: 1.5;
-    color: #F5F5DC;
-}
-
-div {
+.contenu, 
+.day-card,
+.container {
     background: #3D211A;
     height: auto;
     padding-left: 20px;
@@ -45,15 +32,6 @@ div {
     border-radius: 10px;
 }
 
-img {
-    position: relative;
-    padding: 5px;
-    top: 11px;
-    align-items: center;
-    width: 45px;
-    height: auto;
-    border-radius: 10px;
-}
 .container {
     background-color: #6F4D38;
     display: grid;
@@ -61,13 +39,22 @@ img {
     gap: 20px;
     width: 100%;
     justify-content: space-evenly;
-    
 }
 
+.gras {
+    font-family: 'Grosse_lettre', sans-serif;
+}
+
+.content {
+    font-size: 18px;
+    padding: 10px;
+    line-height: 1.5;
+    color: #F5F5DC;
+}
 
 .day-card {
     background-color: #6F4D38;
-    }
+}
 
 .day-card h2 {
     color: #F5F5DC;
@@ -79,4 +66,16 @@ img {
 
 .texte {
     font-weight: bold;
+
+}
+
+
+.calendrier {
+    position: relative;
+    padding: 5px;
+    top: 11px;
+    align-items: center;
+    width: 45px;
+    height: auto;
+    border-radius: 10px;
 }

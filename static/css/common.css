@@ -1,67 +1,67 @@
+
 @font-face {
     font-family: 'Grosse_lettre';
     src: url(http://localhost:8080/static/font/Grosse_lettres.woff);
 }
-
 @font-face {
     font-family: 'Petite_lettre';
     src: url(http://localhost:8080/static/font/Petite_lettres.woff);
 }
 
 
-.footer {
+.footer{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: auto;
     background-color: #3D211A;
     width: 100%;
-    padding: 10px 10px;
-    bottom: 0;
+    padding: 15px 0;
 
 }
-
 .fm-liste {
     color: #CBB799;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     align-items: center;
-    padding: 0 75px;
+    padding: 0 75px ;
 }
 
-.fm-liste>ul {
+.fm-liste>ul{
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     padding: 7px;
 }
 
-.fm-liste>ul>li {
+.fm-liste>ul>li{
     list-style: none;
     padding: 2px 0;
 }
 
-.footer-copyright {
+.footer-copyright{
     font-family: 'Petite_lettre', sans-serif;
     color: #CBB799;
     padding: 15px 0;
 
 }
 
-.footer-Hliste {
+.footer-Hliste{
     font-family: 'Grosse_lettre', sans-serif;
     color: #F5F5DC;
 
 
 }
 
-.footer-main {
+.footer-main{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -73,11 +73,12 @@
     font-weight: bold;
     width: 100%;
     background-color: transparent;
-    font-family: 'Grosse_lettre', sans-serif;
+    font-family: 'Grosse_lettre', sans-serif ;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 30px 30px;
+    box-sizing: border-box;
 }
 
 .header-ul {
@@ -88,15 +89,31 @@
     width: 15vw;
 
 }
-
-.header-liste {
+.header-liste{
     list-style: none;
     color: #F5F5DC;
 
 }
+.headerh{
+    color : #F5F5DC;
+}
 
-.headerh {
+
+.portfabio{
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10%;
+    right: 0px;
+    transform: translateY(calc(-100% - 14px));
+}
+.h-portfabio{
+    display: flex ;
+    font-family: 'Grosse_lettre', sans-serif;
     color: #F5F5DC;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: center;
 }
 
 a {

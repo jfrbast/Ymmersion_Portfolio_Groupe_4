@@ -15,6 +15,7 @@ func main() {
 	http.Handle("/static/", http.StripPrefix("/static/", fileServer))
 
 	http.HandleFunc("/", pages.HomePage)
+	http.HandleFunc("/portfabio", pages.Portfabio)
 
 	fmt.Println("Serveur démarré sur http://localhost:8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))

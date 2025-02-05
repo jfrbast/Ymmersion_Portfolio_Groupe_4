@@ -1,12 +1,82 @@
 body{
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
+    background-color: #6F4D38;
+    color: #F5F5DC;
+
+
+}
+.Titre{
+    font-family: 'Grosse_lettre', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.PetitTitre{
+    font-family: 'Petite_lettre', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 350px;
+
+}
+.paragraphe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 15vw;
+}
+
+.paragraphe>.titreparag{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.paragraphe>.titreparag>p{
+    list-style: none;
+    padding-top: 40px;
+}
+
+.text-upper{
+    text-transform: uppercase;
+}
+
+.Texte{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     width: 100%;
     height: auto;
     background: #6F4D38;
+    box-sizing: border-box;
+}
 
+.Texte1{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background: #6F4D38;
+    box-sizing: border-box;
+}
+
+.Accueil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.PageAccueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }

@@ -103,8 +103,8 @@
     display: flex;
     box-sizing: border-box;
     position: absolute;
-    width: 10%;
-    right: 0px;
+    height: 70%;
+    right: 10px;
     transform: translateY(calc(-100% - 14px));
 }
 .h-portfabio{
@@ -116,7 +116,7 @@
     justify-content: center;
 }
 
-a {
+a{
     text-decoration: none;
     color: #F5F5DC;
     cursor: pointer;

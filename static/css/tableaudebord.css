@@ -1,6 +1,7 @@
+/* Style de la page */
 body {
     width: 100%;
-    background: #6F4D38;
+    background: #6F4D38; /* Couleur de fond pour notre site */
     margin: 0;
 }
 
@@ -28,15 +29,15 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-    padding-bottom: 50px;
-    border-radius: 10px;
+    padding-bottom: 50px;  
+    border-radius: 10px; /* Arrondi pour un effet plus doux */
 }
 
 .container {
     background-color: #6F4D38;
     display: grid;
-    grid-template-columns: repeat(5, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(5, minmax(250px, 1fr)); /* 5 colonnes flexibles */
+    gap: 20px; /* Espacement entre les éléments */
     width: 100%;
     justify-content: space-evenly;
 }
@@ -59,7 +60,7 @@ body {
 .day-card h2 {
     color: #F5F5DC;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 5px; /* Arrondi subtil */
     text-align: center;
     margin-top: 0;
 }
@@ -72,7 +73,7 @@ body {
 .calendrier {
     position: relative;
     padding: 5px;
-    top: 11px;
+    top: 11px; /* Légèrement décalé pour l’alignement */
     align-items: center;
     width: 45px;
     height: auto;

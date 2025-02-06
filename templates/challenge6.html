@@ -1,0 +1,85 @@
+{{define "challenge6"}}
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Source Code Formatter</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" id="themeStylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-coy.min.css">
+        <style>
+            pre {
+                overflow: auto;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <h2 class="my-4">Formatted Code:</h2>
+        <pre id="formattedCode" class="language-javascript">
+            <code>
+                package main
+
+import (
+	"fmt"
+	"unicode"
+)
+
+func main() {
+	motdepasse := ""
+	fmt.Scanln(&motdepasse)
+	fmt.Println(motdepassediff(motdepasse))
+
+}
+
+func motdepassediff(motdepasse string) string {
+	isMAJ := false
+	isCHAR := false
+	difficulte := 0
+	if len(motdepasse) >= 8 {
+		difficulte += 1
+	}
+	for _, i := range motdepasse {
+		if unicode.IsUpper(i) && isMAJ == false {
+			difficulte += 1
+			isMAJ = true
+
+		}
+		if i >= '!' && i <= '/' && isCHAR == false {
+			difficulte += 1
+			isCHAR = true
+		}
+	}
+
+	if difficulte == 1 {
+		return "moyen"
+
+	}
+	if difficulte == 2 {
+		return "fort"
+	}
+
+	if difficulte >= 3 {
+		return "tres fort"
+	}
+
+	return "Bof"
+
+}
+
+            </code>
+        </pre>
+    </div>
+
+    <!-- Include Prism.js for syntax highlighting -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+
+    <script>
+
+    </script>
+    </body>
+    </html>
+
+{{end}}

@@ -43,3 +43,13 @@ func Team(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Erreur interne du serveur", http.StatusInternalServerError)
 	}
 }
+
+func Challenge4(w http.ResponseWriter, r *http.Request) {
+
+	err := templates.Tpl.ExecuteTemplate(w, "challenge4", nil)
+	if err != nil {
+		log.Println("Erreur lors de l'exécution du template :", err)
+
+		http.Error(w, "Erreur interne du serveur", http.StatusInternalServerError)
+	}
+}

@@ -51,3 +51,12 @@ func Defi2(w http.ResponseWriter, r *http.Request) {
 		http.Error(w, "Erreur interne du serveur", http.StatusInternalServerError)
 	}
 }
+
+func Defi1(w http.ResponseWriter, r *http.Request) {
+	err := templates.Tpl.ExecuteTemplate(w, "defi_1", nil)
+	if err != nil {
+		log.Println("Erreur lors de l'écution du template :", err)
+
+		http.Error(w, "Erreur interne du serveur", http.StatusInternalServerError)
+	}
+}

@@ -3,15 +3,7 @@ body{
     background-color: #6F4D38;
     color: #F5F5DC;
 }
-.Bouton{
-    display: flex;
-    text-decoration: none;
-    margin: 200px 708px;
-    width: auto;
-    align-items: center;
-    justify-content: center;
 
-}
 
 .Titre{
     font-family: 'Grosse_lettre', sans-serif;
@@ -115,7 +107,7 @@ body{
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 23px;
     padding: 0 18px;
     line-height: 50px;
     text-align: center;
@@ -127,7 +119,14 @@ body{
 
 
 }
-
+.Bouton {
+    display: flex;
+    text-decoration: none;
+    margin: 200px 650px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
 .button:hover {
     background-color: #F5F5DC;
 }

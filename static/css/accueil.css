@@ -18,6 +18,83 @@ body{
     text-align: center;
     padding-bottom: 350px;
 
+}/*  Style général */
+body {
+    box-sizing: border-box;
+    background-color: #6F4D38; /* Fond marron chaud */
+    color: #F5F5DC; /* Texte en beige clair pour le contraste */
+}
+
+/* Titres principaux  */
+.Titre {
+    font-family: 'Grosse_lettre', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px; /* Espacement pour un bon positionnement */
+}
+
+.PetitTitre {
+    font-family: 'Petite_lettre', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 350px; /* Grand espacement sous le titre */
+}
+
+/* Style des paragraphes */
+.paragraphe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 15vw; /* Limitation de la largeur pour un meilleur rendu */
+}
+
+/* Titre du paragraphe */
+.paragraphe > .titreparag {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Espacement entre les paragraphes */
+.paragraphe > .titreparag > p {
+    list-style: none;
+    padding-top: 40px;
+}
+
+/* Texte en majuscules */
+.text-upper {
+    text-transform: uppercase;
+}
+
+/* Sections textuelles  */
+.Texte, .Texte1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    background: #6F4D38; /* Fond identique au body */
+    box-sizing: border-box;
+}
+
+/*  Accueil */
+.Accueil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/* Conteneur principal de la page d’accueil */
+.PageAccueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alignement des éléments en haut */
 }
 .paragraphe {
     display: flex;

@@ -110,6 +110,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .block-img{
@@ -140,10 +141,39 @@ body
     padding-left: 10px;
 }
 
+.img_Etoile_2
+{
+    width: 63px;
+    padding-right: 15px;
+}
+
+.img_Etoile_3
+{
+    width: 63px;
+    padding-right: 15px;
+}
+
+.img_Etoile_4
+{
+    width: 63px;
+    padding-right: 15px;
+}
+
+.img_Etoile_5
+{
+    width: 63px;
+    padding-right: 15px;
+}
+
 .Page_Title
 {
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+.my feeling
+{
+    margin: 100px;
 }

@@ -1,80 +1,119 @@
 {{define "tableaudebord"}}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="/static/css/common.css">
-    <link rel="stylesheet" href="/static/css/tableaudebord.css">
-</head>
-<body>
-{{template "header"}}
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dashboard</title>
 
-<h1 class="Title"><img src="/static/images/calendrier.png" class="calendrier" alt="calendrier">DASHBOARD</h1>
+        <!-- Styles CSS communs et spécifiques -->
+        <link rel="stylesheet" href="/static/css/common.css">
+        <link rel="stylesheet" href="/static/css/tableaudebord.css">
+    </head>
+    <body>
+    {{template "header"}} <!-- Inclusion du header -->
 
-<h2 class="explication">A dashboard is a clearly presented summary of key information for a given day or activity. It helps to monitor performance and make decisions quickly.</h2>
-<div class="container">
-    <div class="day-card">
-        <div class="contenu">
-            <h2>Monday</h2>
-            <p class="content">
-                Having taken note of specification, we started to organize ourself. So we created a <span class="gras">Miro</span>, a <span class="gras">Trello</span>, a discussion group where we share files and images together.
-                We divided up the tasks, and we start working.
-            </p>
-            <p class="content">
-                From the very first morning a first test coming out, Nans was the first to go for a test.
-            </p>
-            <p class="content">
-                The challenge, recreate in <span class="gras">CSS</span> a creeper head (see challenge 1).
-            </p>
-            <p class="content">
-                In the afternoon, the second one, Thibaut on it, a program was needed, like a guess the price, you choose a number and the program sends you if it's more or less (see challenge 2).
-            </p>
-            <p class="content">
-                Then Omrane started to work on <span class="gras">homepage</span>, Enzo on a <span class="gras">presentation page</span> for our team, Nans on his <span class="gras">challenge page</span>, Bastien on all the common things like <span class="gras">header</span>, <span class="gras">footer</span>, <span class="gras">server creation</span>, And Thibaut on his challenge too.
-            </p>
+    <!-- Titre principal avec icône -->
+    <h1 class="Title">
+        <img src="/static/images/calendrier.png" class="calendrier" alt="calendrier">
+        DASHBOARD
+    </h1>
+
+    <!-- Introduction au tableau de bord -->
+    <h2 class="explication">
+        A dashboard is a clearly presented summary of key information for a given day or activity.
+        It helps to monitor performance and make decisions quickly.
+    </h2>
+
+    <div class="container">
+        <!-- Lundi -->
+        <div class="day-card">
+            <div class="contenu">
+                <h2>Monday</h2>
+                <p class="content">
+                    Having taken note of specifications, we started to organize ourselves. We created a
+                    <span class="gras">Miro</span>, a <span class="gras">Trello</span>, and a discussion group to share files and images together.
+                    We divided up the tasks and started working.
+                </p>
+                <p class="content">
+                    From the very first morning, a first test came out. Nans was the first to attempt it.
+                </p>
+                <p class="content">
+                    The challenge: recreate a <span class="gras">Creeper head</span> in CSS (see challenge 1).
+                </p>
+                <p class="content">
+                    In the afternoon, the second challenge arrived—Thibaut took it on. A program was needed,
+                    like a "guess the price" game, where you choose a number and the program tells you if it’s higher or lower (see challenge 2).
+                </p>
+                <p class="content">
+                    Then, Omrane started working on the <span class="gras">homepage</span>, Enzo on a
+                    <span class="gras">presentation page</span> for our team, Nans on his
+                    <span class="gras">challenge page</span>, Bastien on common elements like the
+                    <span class="gras">header</span>, <span class="gras">footer</span>, and
+                    <span class="gras">server creation</span>, and Thibaut continued his challenge.
+                </p>
+            </div>
+        </div>
+
+        <!-- Mardi -->
+        <div class="day-card">
+            <div class="contenu">
+                <h2>Tuesday</h2>
+                <p class="content">
+                    Lilian joined us and started working on the <span class="gras">dashboard</span>. Meanwhile,
+                    Nans, Omrane, and Thibaut continued working on their pages. Bastien completed the
+                    <span class="gras">header</span> and <span class="gras">footer</span>, and with Nans’ help,
+                    added the <span class="gras">Portfabio</span> page.
+                    We took photos of a door, of Fabio, of Fabio on a door, Fabio in front of the door—funny moments like these.
+                </p>
+                <p class="content">
+                    No challenges this day.
+                </p>
+            </div>
+        </div>
+
+        <!-- Mercredi -->
+        <div class="day-card">
+            <div class="contenu">
+                <h2>Wednesday</h2>
+                <p class="content">
+                    This day, we started to <span class="gras">merge all the branches</span> into the main branch,
+                    which caused <span class="gras">a few problems.</span>
+                    Bastien completed <span class="gras">Portfabio</span>, resolved all <span class="gras">merge conflicts</span>,
+                    made a few fixes, and added a <span class="gras">button</span> on the homepage.
+                </p>
+                <p class="content">
+                    Omrane finished his part of the <span class="gras">homepage</span> and started his challenge page.
+                    The <span class="gras">challenge</span> was to generate a <span class="gras">password</span> using Go.
+                    Thibault and Nans continued working on their pages.
+                </p>
+                <p class="content">
+                    Enzo worked on the page where all the challenges are <span class="gras">united</span>,
+                    and Lilian completed the <span class="gras">dashboard</span> and helped with fixes.
+                </p>
+            </div>
+        </div>
+
+        <!-- Jeudi -->
+        <div class="day-card">
+            <div class="contenu">
+                <h2>Thursday</h2>
+                <p class="content">
+                    (Ajoute ton texte ici)
+                </p>
+            </div>
+        </div>
+
+        <!-- Vendredi -->
+        <div class="day-card">
+            <div class="contenu">
+                <h2>Friday</h2>
+                <p class="content">
+                    (Ajoute ton texte ici)
+                </p>
+            </div>
         </div>
     </div>
 
-    <div class="day-card">
-        <div class="contenu">
-            <h2>Tuesday</h2>
-            <p class="content">
-               Lilian joined us and he started working on this <span class="gras">dashboard</span>, Nans, Omrane and Thibaut still on their pages. Bastien finished the header, footer, go, and added with Nans help the <span class="gras">Portfabio</span>, we take photos of a door, of Fabio, Fabio on a door, Fabio in front of the door, jokes like this.
-            </p>
-            <p class="content">
-               No challenge this day.
-            </p>
-        </div>
-    </div>
-
-    <div class="day-card">
-        <div class="contenu">
-        <h2>Wednesday</h2>
-        <p class="content">
-            (Ajoute ton texte ici)
-        </p>
-        </div>
-    </div>
-
-    <div class="day-card">
-        <div class="contenu">
-        <h2 >Thursday</h2>
-        <p class="content">
-            (Ajoute ton texte ici)
-        </p>
-    </div>
-    </div>
-
-    <div class="day-card">
-        <div class="contenu">
-        <h2>Friday</h2>
-        <p class="content">
-            (Ajoute ton texte ici)
-        </p>
-    </div>
-    </div>
-</div>
-{{template "footer"}}
-</body>
-</html>
+    {{template "footer"}} <!-- Inclusion du footer -->
+    </body>
+    </html>
 {{end}}

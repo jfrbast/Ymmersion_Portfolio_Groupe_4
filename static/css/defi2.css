@@ -12,6 +12,8 @@ body
 }
 .defi2_title
 {
+    display: flex;
+    justify-content: center;
     color: #F5F5DC;
     font-family: 'Grosse_lettre', Arial, sans-serif;
     padding: 20px;
@@ -20,6 +22,8 @@ body
 
 .defi2_text
 {
+    display: flex;
+    justify-content: center;
     color: #F5F5DC;
     font-family: 'Petite_lettre',Arial, sans-serif;
     padding-left: 20px;
@@ -155,7 +159,6 @@ body
 
 }
 
-.my feeling
-{
-    margin: 100px;
+.myfeeling{
+    padding: 100px;
 }

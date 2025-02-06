@@ -1,77 +1,62 @@
-/* Style global  */
 body {
     background-color: #6F4D38; 
-    font-family: 'Grosse_lettre', sans-serif; /* Police personnalisée */
+    font-family: 'Grosse_lettre', sans-serif;
     color: #F5F5DC; 
     margin: 0;
     padding: 0;
-    
-    /* Centrage du contenu principal */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Prend toute la hauteur de l'écran */
+    min-height: 100vh;
 }
 
-/* Titre de la section équipe */
 .team-title {
     padding: 5px;
     text-align: center;
 }
 
-/* Conteneur du slider Swiper */
 .swiper-container {
     width: 100%;
-    max-width: 800px; /* Limite la largeur pour éviter un trop grand étirement */
-    height: 75vh; /* Hauteur proportionnelle à l’écran */
+    max-width: 800px;
+    height: 75vh;
 }
-
-/* Slide individuel du Swiper */
 .swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: none; /* Suppression de l'arrière-plan */
+    background: none;
 }
 
-/* Carte contenant une image et du texte  */
 .image-box {
     background: #a07856;
     border: 4px solid #cbb799; 
-    border-radius: 15px; /* Coins arrondis */
+    border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre légère pour relief */
-    
-    /* Centrage du contenu */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    /* Animation au survol */
     transition: transform 0.3s ease;
 }
-
-/* Effet d'agrandissement au survol */
 .image-box:hover {
     transform: scale(1.05);
 }
 
-/* Images des membres de l'équipe */
 .image-box img {
     width: 200px;
     height: 200px;
-    object-fit: cover; /* Évite la déformation de l’image */
-    border-radius: 10px; /* Coins légèrement arrondis */
+    object-fit: cover;
+    border-radius: 10px;
     border: 3px solid #a07856; 
 }
 
-/* Texte sous l’image  */
 .image-box p {
     font-family: 'Grosse_lettre',sans-serif;
     margin-top: 5px;
     font-size: 25px;
-    color: #F5F5DC; /* Texte en blanc pour un bon contraste */
+    color: #F5F5DC;
     font-weight: bold;
 }

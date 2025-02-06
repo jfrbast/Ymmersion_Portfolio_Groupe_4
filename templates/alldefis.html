@@ -1,0 +1,94 @@
+{{define "alldefis"}}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grille de cartes</title>
+    <link rel="stylesheet" href="/static/css/alldefis.css">
+</head>
+<body>
+{{template "header"}}
+<main>
+    <div class="container">
+        <h1 class="alldefis-title">Les défis de l'équipe 4</h1>
+        <div class="grid">
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        ytx
+                    </div>
+                    <div class="card-back">
+                        <p>Description du défi</p>
+                        <button class="card-button">Commencer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        yt
+                    </div>
+                    <div class="card-back">
+                        <p>Description du défi</p>
+                        <button class="card-button">Commencer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        y
+                    </div>
+                    <div class="card-back">
+                        <p>Description du défi</p>
+                        <button class="card-button">Commencer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        i
+                    </div>
+                    <div class="card-back">
+                        <p>Description du défi</p>
+                        <button class="card-button">Commencer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        io
+                    </div>
+                    <div class="card-back">
+                        <p>Description du défi</p>
+                        <button class="card-button">Commencer</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        ioi
+                    </div>
+                    <div class="card-back">
+                        <p>Description du défi</p>
+                        <button class="card-button">Commencer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script>
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('flipped');
+        });
+    });
+</script>
+{{template "footer"}}
+</body>
+</html>
+{{end}}

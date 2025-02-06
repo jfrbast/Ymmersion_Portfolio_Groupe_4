@@ -1,8 +1,11 @@
 body
 {
-    background: #6F4D38
-
+    background: #6F4D38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .defi2_main_title
 {
@@ -30,6 +33,16 @@ body
     font-size: 15px ;
 }
 
+.defi2_step_text
+{
+    display: flex;
+    justify-content: center;
+    color: #3D211A;
+    font-family: 'Petite_lettre',Arial, sans-serif;
+    padding-left: 20px;
+    font-size: 15px ;
+}
+
 
 .img_Step1
 {
@@ -52,47 +65,50 @@ body
 .img_Step4
 {
     width: 300px;
-    padding: 5px;
+
 }
+
 .first_div_step
 {
-    position: absolute;
-    top: 60%;
-    left: 40px;
-    transform: translateY(-50%);
-    padding: 5px;
+
+
     text-align: center;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    border: #3D211A 10px;
+    margin: 20px;
+    padding: 10px;
 }
 
 .second_div_step
 {
-    position: absolute;
-    top: 60%;
-    right: 50px;
-    transform: translateY(-50%);
-    padding: 5px;
     text-align: center;
-
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    border: #3D211A 10px;
+    margin: 20px;
+    padding: 10px;
 }
 
 .third_div_step
 {
     width: 39%;
-    margin: 260px 0 0 0;
     text-align: center;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    border: #3D211A 10px;
+    margin: 20px;
     padding: 10px;
-
 }
 
 .fourth_div_step
 {
-    position: absolute;
-    top: 83%;
-    right: 125px;
-    transform: translateY(-50%);
-    padding: 15px;
     text-align: center;
-    margin: 10px;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    border: #3D211A 10px;
+    margin: 20px;
+    padding: 10px;
 }
 
 .real_code_defi2
@@ -104,9 +120,9 @@ body
 
 .img_real_code
 {
-    width: 470px;
-    margin: 20px;
-    padding-left: 90px;
+    width: 65%;
+    margin-bottom: 10px;
+
 
 }
 
@@ -114,6 +130,12 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    border: #3D211A 10px;
+    padding: 20px;
+    max-width: 45%;
     text-align: center;
 }
 
@@ -125,30 +147,29 @@ body
 
 .img_corrected_code
 {
-    width: 430px;
-    margin: 20px;
-    padding-left: 90px;
+    width: 50%;
+    margin-bottom: 10px;
+
 }
 
 .defi2_code_text
 {
     color: #F5F5DC;
     font-family: 'Petite_lettre',Arial, sans-serif;
-    padding-bottom: 15px;
     font-size: 15px ;
 }
 
 .img_Etoile
 {
     width: 100px;
-    margin: 1px;
-    padding-left: 10px;
+
 }
 
 .img_Etoile_2
 {
-    width: 63px;
-    padding-right: 15px;
+    width: 53px;
+   margin: 0 5px;
+
 }
 
 .Page_Title
@@ -160,5 +181,19 @@ body
 }
 
 .myfeeling{
-    padding: 100px;
+margin-bottom: 20px;
+}
+
+.colonne_1 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+
+}
+
+.step_code
+{
+    margin-bottom: 10px;
 }

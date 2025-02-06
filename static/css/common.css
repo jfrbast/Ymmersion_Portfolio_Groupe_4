@@ -107,7 +107,7 @@
 .portfabio {
     display: flex;
     position: absolute;
-    height: 70%;
+    height: 50%;
     right: 10px;
     transform: translateY(calc(-100% - 14px));/* Décalage vers le haut */
 }

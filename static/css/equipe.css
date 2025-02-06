@@ -69,8 +69,9 @@ body {
 
 /* Texte sous l’image  */
 .image-box p {
+    font-family: 'Grosse_lettre',sans-serif;
     margin-top: 5px;
-    font-size: 14px;
-    color: #fff; /* Texte en blanc pour un bon contraste */
+    font-size: 25px;
+    color: #F5F5DC; /* Texte en blanc pour un bon contraste */
     font-weight: bold;
 }

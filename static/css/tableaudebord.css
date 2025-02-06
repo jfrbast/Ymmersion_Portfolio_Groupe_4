@@ -47,6 +47,7 @@ body {
 }
 
 .content {
+    font-family: 'Petite_lettre', sans-serif;
     font-size: 18px;
     padding: 10px;
     line-height: 1.5;
@@ -58,6 +59,7 @@ body {
 }
 
 .day-card h2 {
+    font-family: 'Grosse_lettre', sans-serif;
     color: #F5F5DC;
     padding: 10px;
     border-radius: 5px; /* Arrondi subtil */
@@ -79,3 +81,4 @@ body {
     height: auto;
     border-radius: 10px;
 }
+

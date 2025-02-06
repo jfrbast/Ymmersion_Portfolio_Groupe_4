@@ -1,52 +1,64 @@
 {{define "portfabio"}}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfabio</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/static/css/equipe.css">
-    <link rel="stylesheet" href="/static/css/common.css">
-</head>
-  <body>
+        <!-- Importation du CSS de Swiper pour le carrousel -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+        <!-- Styles spécifiques au site -->
+        <link rel="stylesheet" href="/static/css/common.css">
+        <link rel="stylesheet" href="/static/css/portfab.css">
+    </head>
+    <body>
     <main>
+        <!-- Titre principal -->
         <div class="fab-title">
             <h1 class="h-portfabio">PORTFABIO</h1>
         </div>
+
+        <!-- Carrousel d'images avec Swiper -->
         <div class="swiper-container">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
                     <div class="swiper-slide">
                         <div class="image-box">
-                            <img src="/static/images/porte.jpg" alt="porte">
+                            <img src="/static/images/POOOOOOOOOOOOORTE.jpg" alt="porte">
                             <p>Porte</p>
                         </div>
                     </div>
+                    <!-- Slide 2 -->
                     <div class="swiper-slide">
                         <div class="image-box">
                             <img src="/static/images/fabiodevantporte.jpg" alt="fabporte">
                             <p>Fabio porte</p>
                         </div>
                     </div>
+                    <!-- Slide 3 -->
                     <div class="swiper-slide">
                         <div class="image-box">
                             <img src="/static/images/fabiomonteporte.jpg" alt="fabmonteporte">
                             <p>Fabio monte la porte</p>
                         </div>
                     </div>
+                    <!-- Slide 4 -->
                     <div class="swiper-slide">
                         <div class="image-box">
                             <img src="/static/images/fabioescaladeporte.jpg" alt="fabclimporte">
                             <p>Fabio escalade la porte</p>
                         </div>
                     </div>
+                    <!-- Slide 5 -->
                     <div class="swiper-slide">
                         <div class="image-box">
                             <img src="/static/images/portfabio.jpg" alt="fabioporté">
                             <p>Portfabio</p>
                         </div>
                     </div>
+                    <!-- Slide 6 -->
                     <div class="swiper-slide">
                         <div class="image-box">
                             <img src="/static/images/fabioporteplot.jpg" alt="fabplot">
@@ -54,6 +66,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Boutons de navigation Swiper -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
@@ -61,6 +75,7 @@
         </div>
     </main>
 
+    <!-- Script Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -80,8 +95,6 @@
             },
         });
     </script>
-
-</body>
-</html>
-
+    </body>
+    </html>
 {{end}}

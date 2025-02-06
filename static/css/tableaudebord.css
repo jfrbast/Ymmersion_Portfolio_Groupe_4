@@ -1,81 +1,84 @@
+/* Style de la page */
 body {
     width: 100%;
-    background: #6F4D38;
+    background: #6F4D38; /* Couleur de fond pour notre site */
     margin: 0;
 }
 
-.container {
-    background-color: #6F4D38;
-    display: grid;
-    grid-template-columns: repeat(5, minmax(250px, 1fr));
-    gap: 20px;
-    width: 100%;
-    justify-content: space-evenly;
-    
-}
-
-h1 {
+.Title {
     text-align: center;
     color: #F5F5DC;
-    font-family: 'Grosse_lettre';
-    src: url(http://localhost:8080/static/font/Grosse_lettres.woff);
+    font-family: 'Grosse_lettre', sans-serif;
+
 }
 
-div {
+.explication {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #F5F5DC;
+    font-family: 'Petite_lettre', sans-serif;
+}
+
+.contenu, 
+.day-card,
+.container {
     background: #3D211A;
     height: auto;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
-    padding-bottom: 50px;
-    border-radius: 10px;
+    padding-bottom: 50px;  
+    border-radius: 10px; /* Arrondi pour un effet plus doux */
 }
-.day-card {
+
+.container {
     background-color: #6F4D38;
-    }
-
-.day-card h2 {
-    color: #F5F5DC;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    margin-top: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(250px, 1fr)); /* 5 colonnes flexibles */
+    gap: 20px; /* Espacement entre les éléments */
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-
-.texte {
-    font-weight: bold;
+.gras {
+    font-family: 'Grosse_lettre', sans-serif;
 }
 
-p {
+.content {
+    font-family: 'Petite_lettre', sans-serif;
     font-size: 18px;
     padding: 10px;
     line-height: 1.5;
     color: #F5F5DC;
 }
 
-span {
-    font-family: 'Grosse_lettre';
-    src: url(http://localhost:8080/static/font/Grosse_lettres.woff);
+.day-card {
+    background-color: #6F4D38;
+}
+
+.day-card h2 {
+    font-family: 'Grosse_lettre', sans-serif;
+    color: #F5F5DC;
+    padding: 10px;
+    border-radius: 5px; /* Arrondi subtil */
+    text-align: center;
+    margin-top: 0;
+}
+
+.texte {
+    font-weight: bold;
+
 }
 
 .calendrier {
     position: relative;
     padding: 5px;
-    top: 11px;
+    top: 11px; /* Légèrement décalé pour l’alignement */
     align-items: center;
     width: 45px;
     height: auto;
     border-radius: 10px;
 }
 
-h2 {
-    text-align: center;
-    padding: 10px;
-    font-size: 18px;
-    padding: 10px;
-    line-height: 1.5;
-    color: #F5F5DC;
-    font-family: 'Petite_lettre';
-    src: url(http://localhost:8080/static/font/Petite_lettres.woff);
-}

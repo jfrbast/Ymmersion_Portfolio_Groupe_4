@@ -1,113 +1,90 @@
 {{define "team"}}
-    <!DOCTYPE html>
-    <html lang="fr">
+<html lang="fr">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Présentation de l'équipe</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-        <meta name="description" content="Découvrez l'équipe derrière ce projet avec une présentation interactive de chaque membre.">
+<head>
+    <meta charset="utf-8">
+    <title>Présentation de l'équipe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/static/css/equipe.css">
+    <link rel="stylesheet" href="/static/css/common.css">
+</head>
 
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        <link rel="stylesheet" href="/static/css/equipe.css">
-        <link rel="stylesheet" href="/static/css/common.css">
-    </head>
-
-    <body>
+<body>
 
     {{ template "header" }}
-
-    <main>
-        <!-- Titre principal -->
-        <div class="team-title">
-            <h1>Présentation des membres de l'équipe</h1>
-        </div>
-
-        <!-- Swiper Carousel -->
+<main>
+    <div class="team-title">
+        <h1>Présentation des membres de l'équipe</h1>
+    </div>
+    <div class="swiper-container">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-
-                <!-- Slide Bastien -->
                 <div class="swiper-slide">
                     <div class="image-box">
-                        <img src="/static/images/bastien.png" alt="Bastien" loading="lazy">
+                        <img src="/static/images/bastien.png" alt="Bastien">
                         <p>Bastien</p>
                     </div>
                 </div>
-
-                <!-- Slide Thibaut -->
                 <div class="swiper-slide">
                     <div class="image-box">
-                        <img src="/static/images/thibaut.png" alt="Thibaut" loading="lazy">
+                        <img src="/static/images/thibaut.png" alt="Thibaut">
                         <p>Thibaut</p>
                     </div>
                 </div>
-
-                <!-- Slide Nans -->
                 <div class="swiper-slide">
                     <div class="image-box">
-                        <img src="/static/images/nans.png" alt="Nans" loading="lazy">
+                        <img src="/static/images/nans.png" alt="Nans">
                         <p>Nans</p>
                     </div>
                 </div>
-
-                <!-- Slide Omrane -->
                 <div class="swiper-slide">
                     <div class="image-box">
-                        <img src="/static/images/omrane.png" alt="Omrane" loading="lazy">
+                        <img src="/static/images/omrane.png" alt="Omrane">
                         <p>Omrane</p>
                     </div>
                 </div>
-
-                <!-- Slide Enzo -->
                 <div class="swiper-slide">
                     <div class="image-box">
-                        <img src="/static/images/enzo.png" alt="Enzo" loading="lazy">
+                        <img src="/static/images/enzo.png" alt="Enzo">
                         <p>Enzo</p>
                     </div>
                 </div>
-
-                <!-- Slide Lilian -->
                 <div class="swiper-slide">
                     <div class="image-box">
-                        <img src="/static/images/lilian.png" alt="Lilian" loading="lazy">
+                        <img src="/static/images/lilian.png" alt="Lilian">
                         <p>Lilian</p>
                     </div>
                 </div>
-
             </div>
-
-            <!-- Boutons navigation Swiper -->
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
-    </main>
+    </div>
+</main>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 20,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 20,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
+{{ template "footer" }}
+</body>
 
-    {{ template "footer" }}
-
-    </body>
-    </html>
+</html>
 {{end}}

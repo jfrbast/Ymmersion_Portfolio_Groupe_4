@@ -1,58 +1,50 @@
-{{define "accueil"}}  <!-- Définition du template "accueil" -->
+{{define "accueil"}}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Explore our portfolio, where we tackle creative and challenging tasks while developing a website.">
-
-    <title>Portfolio - Ymmersion</title>
-
-    <!-- Importation des fichiers CSS pour le style de la page -->
+    <title>Portfolio</title>
     <link rel="stylesheet" href="/static/css/common.css">
     <link rel="stylesheet" href="/static/css/accueil.css">
+    <link rel="stylesheet" href="/static/css/common.css">
 </head>
 
+
 <body>
-{{ template "header" }}  <!-- Inclusion du template "header" pour afficher le menu de navigation -->
-
-<main class="page-accueil">
-    <!-- SECTION HERO : Titre principal et introduction -->
-    <section class="hero">
-        <h1 class="titre">WELCOME TO OUR PORTFOLIO YMMERSION</h1>  <!-- Titre principal -->
-        <h2 class="sous-titre">Our Job: Solve creative and challenging tasks while developing a website.</h2> <!-- Sous-titre pour expliquer le projet -->
-
-        <!-- Bouton d’appel à l’action pour voir tous les challenges -->
-        <a class="bouton" href="/dashboard">
-            <button class="button" role="button" aria-label="See all challenges">See all the challenges</button>
-        </a>
-    </section>
-
-    <!-- SECTION PRÉSENTATION : Explication des objectifs du portfolio -->
-    <section class="presentation">
-        <!-- Bloc expliquant le contenu du portfolio -->
-        <div class="bloc">
-            <h3 class="titre-bloc">What you'll find</h3>
-            <p>This portfolio documents our progress during the tasks, showcasing our logic, thought process, and results.</p>
+{{ template "header" }}
+<main class="PageAccueil">
+    <div class="Texte">
+        <!-- Titre -->
+        <h1 class="Titre">WELCOME TO OUR PORTFOLIO YMMERSION</h1>
+    </div>
+    <div class="Texte1">
+    <h2 class="PetitTitre">Our Job :<br>
+        Solve creatives and challenging tasks while developing a website.</h2>
+    </div>
+    <!-- Bounton middle -->
+    <a class="Bouton" href="/team"><button class="button" role="button" >See ALL the challenges</button></a>
+    <div class="Accueil">
+        <div class="paragraphe">
+            <h3 class="titreparag">What you'll find</h3>
+            <p class="parag">This portfolio documents our progression during the tasks, demonstrate our logic, our thoughts and the results.</p>
         </div>
-
-        <!-- Bloc expliquant ce que les visiteurs peuvent apprendre -->
-        <div class="bloc">
-            <h3 class="titre-bloc">What we prepared for you</h3>
-            <p>A detailed presentation of each task, the strategies we applied, and a step-by-step breakdown of our solutions.</p>
+        <div class="paragraphe">
+            <h3 class="titreparag">What we prepared for you</h3>
+            <p class="parag">A detailed presentation of every tasks
+                Our strategies and steps followed to solve those tasks
+                Every solution explained</p>
         </div>
-
-        <!-- Bloc décrivant la méthodologie et les technologies utilisées -->
-        <div class="bloc">
-            <h3 class="titre-bloc">Our approach</h3>
-            <p>Technologies used: <strong>HTML, CSS & Golang</strong>. We also relied on <strong>teamwork</strong> and <strong>project management</strong> using GitHub.</p>
+        <div class="paragraphe">
+            <h3 class="titreparag">Our approach</h3>
+            <p class="parag">Technologies used : HTML/CSS & Golang.
+               Team-work and project management using GitHub.</p>
         </div>
-    </section>
+    </div>
 </main>
-
-{{ template "footer" }}  <!-- Inclusion du template "footer" pour afficher le pied de page -->
+{{ template "footer" }}
 </body>
+
 </html>
 
-{{end}}  <!-- Fin du template "accueil" -->
+{{end}}

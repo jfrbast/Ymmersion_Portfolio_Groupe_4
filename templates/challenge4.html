@@ -1,58 +1,181 @@
 {{define "challenge4"}}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Challenge 4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css"
+        id="themeStylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-dark.min.css">
     <link rel="stylesheet" href="/static/css/common.css">
     <link rel="stylesheet" href="/static/css/challenge4.css">
+    <style>
+        pre {
+            overflow: auto;
+        }
+    </style>
 </head>
-<body>
-{{template "header"}}
-<div class="container">
-    <div class="step-card">
-        <div class="step-number">1</div>
-        <div class="step-title">Création du groupe</div>
-        <p class="step-content">
-            Répartition des tâches et définition des défis. Création des différentes branches du projet.
-        </p>
+
+<body class="challenge4">
+    {{template "header"}}
+    <h1 class="tiltle_1">Challenge 4</h1>
+
+    <div class="contient_texte">
+        <div class="grande_case">
+            <div class="nombre">1</div>
+            <div class="titre_1">Instructions</div>
+            <div class="texte_globale">
+                <p class="texte_1">
+                    Write a program that analyzes a text and displays :
+                </p>
+                <p class="texte_2">
+                    Number of words.
+                </p>
+                <p class="texte_2">
+                    Number of characters.
+                </p>
+                <p class="texte_2">
+                    Longest word.
+                </p>
+            </div>
+        </div>
+
+        <div class="grande_case">
+            <div class="nombre">2</div>
+            <div class="titre_1">Beginning of the challenge</div>
+            <div class="texte_globale">
+
+                <p class="texte_1">
+                    For this challenge, we were allowed to read up on the Internet, and after doing so, I decided to
+                    take the plunge and unfortunately failed the challenge.
+                </p>
+            </div>
+        </div>
+
+        <div class="grande_case">
+            <div class="nombre">3</div>
+            <div class="titre_1">My code</div>
+            <div class="code_2">
+                <pre id="formattedCode" class="language-javascript scrollbar">
+                <code>
+package main
+                        
+import "fmt"
+                                        
+func main() {
+                                        
+var mot string
+var espace_compte int
+                                        
+fmt.Println("Bienvenue sur votre analyse de texte !!")
+fmt.Println("Veuillez entrez votre texte :")
+fmt.Scanf("%s", &mot)
+                                        
+fmt.Println("Voici le résultat de votre analyse :")
+fmt.Println("Nombre de mot :", mot)
+fmt.Println("Nombre de caractères (sans espace) :", &espace_compte)
+fmt.Println("Le mot le plus long :")
+                                        
+}
+                </code>
+            </pre>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+            </div>
+        </div>
+
+        <div class="grande_case">
+            <div class="nombre">4</div>
+            <div class="texte_globale">
+                <div class="titre_1">Correction</div>
+                <div class="code_2">
+                    <pre id="formattedCode" class="language-javascript scrollbar">
+                        <code>
+package main
+
+import (
+"bufio"
+"fmt"
+"os"
+"strings"
+)
+                            
+func analyzeText(text string) (int, int, string) {
+text = strings.TrimSpace(text)
+words := strings.Fields(text)
+wordCount := len(words)
+charCount := len(strings.ReplaceAll(text, " ", "")) 
+longestWord := ""
+for _, word := range words {
+if len(word) > len(longestWord) {
+longestWord = word
+    }
+}
+                            
+return wordCount, charCount, longestWord
+}
+                            
+func main() {
+scanner := bufio.NewScanner(os.Stdin)
+
+fmt.Println("📊 Analyseur de Texte")
+fmt.Println("➡️  Entrez un texte (ou tapez 'exit' pour quitter) :")
+                            
+for {
+fmt.Print("> ")
+scanner.Scan()
+input := scanner.Text()
+
+if strings.ToLower(input) == "exit" {
+fmt.Println("👋 Merci d'avoir utilisé l'analyseur ! À bientôt !")
+break
+}
+                            
+wordCount, charCount, longestWord := analyzeText(input)
+                            
+fmt.Println("\n📊 Résultats de l'analyse :")
+fmt.Printf("📝 Nombre de mots : %d\n", wordCount)
+fmt.Printf("🔢 Nombre de caractères (sans espaces) : %d\n", charCount)
+fmt.Printf("🏆 Mot le plus long : \"%s\"\n\n", longestWord)
+    }
+}
+                            
+                        </code>
+                    </pre>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+                </div>
+            </div>
+        </div>
+
+        <div class="grande_case">
+            <div class="nombre">5</div>
+            <div class="titre_1">End of challenge</div>
+            <div class="texte_globale">
+
+                <p class="texte_1">
+                    The challenge lasted 15 minutes and the winner brought 2 points back to his team. Once the winner
+                    had finished, everyone had to stop programming.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="grande_case">
+            <div class="nombre">5</div>
+            <div class="texte_globale">
+
+                <div class="titre_1">My opinion</div>
+                <p class="texte_1">
+                    The challenge was more than achievable, except that the time limit meant that the first to finish
+                    had 2 extra points for his group.
+                </p>
+            </div>
+
+        </div>
     </div>
-
-    <div class="step-card">
-        <div class="step-number">2</div>
-        <div class="step-title">Conception de la maquette</div>
-        <p class="step-content">
-            Wireframe de la page d'accueil sur Figma et réflexion sur le design global.
-        </p>
-    </div>
-
-    <div class="step-card">
-        <div class="step-number">3</div>
-        <div class="step-title">Développement du défi 1</div>
-        <p class="step-content">
-            Créer une page HTML/CSS pour afficher un Creeper en moins de 20 minutes.
-        </p>
-    </div>
-
-    <div class="step-card">
-        <div class="step-number">4</div>
-        <div class="step-title">Développement du défi 2</div>
-        <p class="step-content">
-            Programmation d'un jeu où l'utilisateur doit deviner un nombre aléatoire.
-        </p>
-    </div>
-
-    <div class="step-card">
-        <div class="step-number">5</div>
-        <div class="step-title">Mise en place du carrousel</div>
-        <p class="step-content">
-            Ajout d'un carrousel pour présenter les défis sur le site.
-        </p>
-    </div>
-</div>
-
-
-{{template "footer"}}
+    {{template "footer"}}
 </body>
+
 </html>
 {{end}}

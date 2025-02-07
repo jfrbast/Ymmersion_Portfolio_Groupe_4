@@ -20,6 +20,7 @@ func main() {
 	http.HandleFunc("/portfabio", pages.Portfabio)
 	http.HandleFunc("/dashboard", pages.TableauDeBord)
 	http.HandleFunc("/team", pages.Team)
+	http.HandleFunc("/challenge4", pages.Challenge4)
 	http.HandleFunc("/defi2", pages.Defi2)
 	http.HandleFunc("/all-defis", pages.Alldefis)
   	http.HandleFunc("/", pages.HomePage)

@@ -1,44 +1,45 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 20px;
+.challenge4 {
+    background-color: #6F4D38;
 }
 
-.container {
+.tiltle_1 {
+    text-align: center;
+    color: #F5F5DC;
+    font-family: 'Grosse_lettre', sans-serif;
+    padding-bottom: 20px;
+}
+
+.contient_texte {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes par défaut */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    max-width: 1000px;
+    max-width: 90%;
     margin: auto;
 }
 
-@media (max-width: 900px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour écrans moyens */
-    }
-}
 
-@media (max-width: 600px) {
-    .container {
-        grid-template-columns: 1fr; /* 1 colonne sur petits écrans */
-    }
-}
 
-.step-card {
-    background: white;
+.grande_case {
+    background: #3D211A;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
+    margin-bottom: 10px;
+    height: min-content;
 }
 
-.step-number {
+.code_2 {
+    height: 300px; /* Hauteur fixe */
+    overflow: auto;
+}
+
+.nombre {
     position: absolute;
     top: -10px;
     left: -10px;
-    background: #333;
-    color: white;
+    background: #A07856;
+    color: #F5F5DC;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -48,15 +49,35 @@ body {
     font-weight: bold;
 }
 
-.step-title {
+.titre_1 {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #333;
+    color: #F5F5DC;
 }
 
-.step-content {
+.texte_1 {
     font-size: 14px;
-    color: #555;
+    color: #F5F5DC;
     line-height: 1.5;
+    font-family: 'Petite_lettre', sans-serif;
+}
+
+.texte_2 {
+    font-size: 14px;
+    color: #F5F5DC;
+    line-height: 1.5;
+    font-family: 'Petite_lettre', sans-serif;
+    /* list-style: inside;*/
+}
+
+
+.texte_globale {
+    background: #3D211A;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
 }

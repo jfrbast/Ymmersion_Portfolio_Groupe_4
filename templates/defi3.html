@@ -1,0 +1,129 @@
+{{define "defi3"}}
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Défi 3 - Palindrome</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/css/defi3.css">
+  <link rel="stylesheet" href="/static/css/common.css">
+</head>
+<body>
+{{template "header"}}
+<main>
+  <div class="challenge-container">
+    <h1 class="challenge-title">Challenge n°3 : Palindrome</h1>
+
+    <section class="challenge-section">
+      <h2>Description of the test</h2>
+      <div class="content">
+        <h3>Goal</h3>
+        <h4>Create a program that can detect whether a word entered by the user is a palindrome</h4>
+        <div class="obj-title">
+          <h3>Instructions</h3>
+          <h4>Write a program to check whether a word or phrase (without spaces) is a palindrome (ex: “radar” , “kayak”). Time limit 20 min</h4>
+        </div>
+        <div class="obj-title">
+          <h3>Difficulty 2/5</h3>
+        </div>
+      </div>
+    </section>
+    <section class="challenge-section">
+      <h2>Logic and Reflection</h2>
+      <div class="content">
+        <div class="step">
+          <h3>Step 1</h3>
+          <h4>read and understand the subject. </h4>
+        </div>
+        <div class="step">
+          <h3>Step 2</h3>
+          <h4>Write the sentences required for the program, then set up the functions. </h4>
+          <img class="defi3img" src="/static/images/pal2.png" alt="defi3">
+        </div>
+        <div class="step">
+          <h3>Step 3</h3>
+          <h4>Implementing the code logic in the function </h4>
+          <img class="defi3img" src="/static/images/pal3.png" alt="defi3">
+        </div>
+      </div>
+    </section>
+
+    <section class="challenge-section">
+      <h2>Résults</h2>
+      <div class="content">
+        <h4>Code correction</h4>
+        <div class="code-container">
+          <pre><code class="language-go">package main
+
+import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+)
+
+// Fonction pour vérifier si une chaîne est un palindrome
+func isPalindrome(s string) bool {
+	// Convertir en minuscules et enlever les espaces
+	s = strings.ToLower(strings.ReplaceAll(s, " ", ""))
+
+	// Comparer les caractères en miroir
+	n := len(s)
+	for i := 0; i < n/2; i++ {
+		if s[i] != s[n-1-i] {
+			return false
+		}
+	}
+	return true
+}
+
+func main() {
+	scanner := bufio.NewScanner(os.Stdin)
+
+	fmt.Println("🔄 Bienvenue dans le jeu du Palindrome !")
+	fmt.Println("➡️  Entrez un mot ou une phrase (ou tapez 'exit' pour quitter) :")
+
+	for {
+		fmt.Print("> ")
+		scanner.Scan()
+		input := scanner.Text()
+
+		// Vérifier si l'utilisateur veut quitter
+		if strings.ToLower(input) == "exit" {
+			fmt.Println("👋 Merci d'avoir joué ! À bientôt !")
+			break
+		}
+
+		// Vérifier si le mot est un palindrome
+		if isPalindrome(input) {
+			fmt.Println("✅ C'est un palindrome ! 🎉")
+		} else {
+			fmt.Println("❌ Ce n'est pas un palindrome.")
+		}
+	}
+}</code></pre>
+        </div>
+
+        <div class="screenshots">
+        </div>
+      </div>
+    </section>
+
+    <section class="challenge-section">
+      <h2>Lessons Learned</h2>
+      <div class="content">
+        <ul class="lessons-list">
+          <li>Learn to make code simpler and think about code structure faster </li>
+        </ul>
+      </div>
+      <div class="content">
+        <ul class="lessons-list">
+          <li>My impression of the challenge was that it was fairly simple with no real traps, just that I wasn't quick enough.</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>
+{{template "footer"}}
+</body>
+</html>
+{{end}}

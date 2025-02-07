@@ -1,0 +1,61 @@
+body {
+    font-family: 'Grosse_lettre', sans-serif Arial;
+    background-color: #6F4D38;
+
+}
+
+h1.encadre, h2 {
+    text-align: center;
+    padding: 10px;
+    background-color: green;
+    border: black 2px;
+    border-radius: 30px;
+    color: #F5F5DC ;
+}
+
+.step {
+    background-color: #F5F5DC;
+    margin: 25px;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.defi {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Espacement entre les images */
+    align-items: center;
+}
+
+.defi>img {
+    max-width: 400px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 30px; /* Coins légèrement arrondis */
+}
+
+
+.img_Etoile
+{
+    width: 100px;
+    margin: 1px;
+    padding-left: 10px;
+}
+
+.img_Etoile_2
+{
+    width: 63px;
+    padding-right: 15px;
+}
+
+.Page_Title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+

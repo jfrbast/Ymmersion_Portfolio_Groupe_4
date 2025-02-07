@@ -1,15 +1,21 @@
+/* General styling for the body */
 body
 {
-    background: #6F4D38
-
+    background: #6F4D38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Main title styling */
 .defi2_main_title
 {
     color: #F5F5DC;
     font-family: 'Grosse_lettre', Arial, sans-serif;
     text-align: center;
 }
+
+/* Styling for challenge section titles */
 .defi2_title
 {
     display: flex;
@@ -17,9 +23,9 @@ body
     color: #F5F5DC;
     font-family: 'Grosse_lettre', Arial, sans-serif;
     padding: 20px;
-
 }
 
+/* Paragraph styling */
 .defi2_text
 {
     display: flex;
@@ -27,7 +33,19 @@ body
     color: #F5F5DC;
     font-family: 'Petite_lettre',Arial, sans-serif;
     padding-left: 20px;
-    font-size: 15px ;
+    font-size: 15px;
+    text-align: center; /* Centers text */
+}
+
+/* Step description text styling */
+.defi2_step_text
+{
+    display: flex;
+    justify-content: center;
+    color: #3D211A; /* Dark brown text color */
+    font-family: 'Petite_lettre',Arial, sans-serif;
+    padding-left: 20px;
+    font-size: 15px;
 }
 
 
@@ -52,61 +70,66 @@ body
 .img_Step4
 {
     width: 300px;
-    padding: 5px;
+
 }
+
 .first_div_step
 {
-    position: absolute;
-    top: 60%;
-    left: 40px;
-    transform: translateY(-50%);
-    padding: 5px;
+
+
     text-align: center;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    border: #3D211A 10px;
+    margin: 20px;
+    padding: 10px;
 }
 
 .second_div_step
 {
-    position: absolute;
-    top: 60%;
-    right: 50px;
-    transform: translateY(-50%);
-    padding: 5px;
     text-align: center;
-
-}
-
-.third_div_step
-{
-    width: 39%;
-    margin: 260px 0 0 0;
-    text-align: center;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    border: #3D211A 10px;
+    margin: 20px;
     padding: 10px;
-
 }
 
+.img_Step2 { margin: 10px; }
+.img_Step3 { padding: 5px; }
+
+.first_div_step,
+.second_div_step,
+.third_div_step,
 .fourth_div_step
 {
-    position: absolute;
-    top: 83%;
-    right: 125px;
-    transform: translateY(-50%);
-    padding: 15px;
     text-align: center;
-    margin: 10px;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    border: #3D211A 10px;
+    margin: 20px;
+    padding: 10px;
 }
 
+.third_div_step { width: 39%; }
+
+/* Code image container styling */
 .real_code_defi2
 {
     display: flex;
     justify-content: center;
 }
 
+/* Image size adjustments */
+.img_real_code { width: 65%; margin-bottom: 10px; }
+.img_corrected_code { width: 50%; margin-bottom: 10px; }
 
-.img_real_code
+/* Container for code display */
+.block-defi2
 {
-    width: 470px;
-    margin: 20px;
-    padding-left: 90px;
+    width: 65%;
+    margin-bottom: 10px;
+
 
 }
 
@@ -115,9 +138,17 @@ body
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    border: #3D211A 10px;
+    padding: 20px;
+    max-width: 45%;
+    text-align: center;
 }
 
-.block-img{
+/* Layout for images of the challenge steps */
+.block-img
+{
     display: flex;
     justify-content: space-evenly;
 
@@ -125,48 +156,26 @@ body
 
 .img_corrected_code
 {
-    width: 430px;
-    margin: 20px;
-    padding-left: 90px;
+    width: 50%;
+    margin-bottom: 10px;
+
 }
 
-.defi2_code_text
-{
-    color: #F5F5DC;
-    font-family: 'Petite_lettre',Arial, sans-serif;
-    padding-bottom: 15px;
-    font-size: 15px ;
-}
+/* Styling for the challenge difficulty stars */
+.img_Etoile { width: 100px; }
+.img_Etoile_2 { width: 53px; margin: 0 5px; }
 
 .img_Etoile
 {
     width: 100px;
-    margin: 1px;
-    padding-left: 10px;
+
 }
 
 .img_Etoile_2
 {
-    width: 63px;
-    padding-right: 15px;
-}
+    width: 53px;
+   margin: 0 5px;
 
-.img_Etoile_3
-{
-    width: 63px;
-    padding-right: 15px;
-}
-
-.img_Etoile_4
-{
-    width: 63px;
-    padding-right: 15px;
-}
-
-.img_Etoile_5
-{
-    width: 63px;
-    padding-right: 15px;
 }
 
 .Page_Title
@@ -174,9 +183,24 @@ body
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.myfeeling{
-    padding: 100px;
+/* Styling for the user reflection section */
+.myfeeling
+{
+    margin-bottom: 20px;
+    text-align: center;
 }
+
+/* Main content column settings */
+.colonne_1
+{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Spacing for the code step section */
+.step_code { margin-bottom: 10px; }

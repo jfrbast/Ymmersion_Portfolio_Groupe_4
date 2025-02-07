@@ -14,9 +14,7 @@
 
 {{ template "header" }}
 <main>
-    <div class="team-title">
-        <h1>Présentation des membres de l'équipe</h1>
-    </div>
+    <h1 class="team-title">Présentation des membres de l'équipe</h1>
     <div class="swiper-container">
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
@@ -24,36 +22,42 @@
                     <div class="image-box">
                         <img src="/static/images/bastien.png" alt="Bastien">
                         <p>Bastien</p>
+                        <a href="/challenge6" class="defi-button">Challenge 6</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="image-box">
                         <img src="/static/images/thibaut.png" alt="Thibaut">
                         <p>Thibaut</p>
+                        <a href="/challenge2" class="defi-button">Challenge 2</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="image-box">
                         <img src="/static/images/nans.png" alt="Nans">
                         <p>Nans</p>
+                        <a href="/challenge1" class="defi-button">Challenge 1</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="image-box">
                         <img src="/static/images/omrane.png" alt="Omrane">
                         <p>Omrane</p>
+                        <a href="/challenge5" class="defi-button">Challenge 5</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="image-box">
                         <img src="/static/images/enzo.png" alt="Enzo">
                         <p>Enzo</p>
+                        <a href="/challenge3" class="defi-button">Challenge 3</a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="image-box">
                         <img src="/static/images/lilian.png" alt="Lilian">
                         <p>Lilian</p>
+                        <a href="/challenge4" class="defi-button">Challenge 4</a>
                     </div>
                 </div>
             </div>
@@ -69,6 +73,7 @@
     var swiper = new Swiper(".mySwiper", {
         spaceBetween: 20,
         centeredSlides: true,
+        loop: true,
         autoplay: {
             delay: 2500,
             disableOnInteraction: false,

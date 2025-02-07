@@ -1,4 +1,3 @@
-/* General styling for the body */
 body
 {
     background: #6F4D38; /* Sets background color */
@@ -7,15 +6,13 @@ body
     align-items: center; /* Centers content horizontally */
 }
 
-/* Main title styling */
+
 .defi2_main_title
 {
     color: #F5F5DC; /* Beige text color */
     font-family: 'Grosse_lettre', Arial, sans-serif; /* Custom font with fallback */
     text-align: center; /* Centers the title */
 }
-
-/* Styling for challenge section titles */
 .defi2_title
 {
     display: flex;
@@ -23,9 +20,9 @@ body
     color: #F5F5DC;
     font-family: 'Grosse_lettre', Arial, sans-serif;
     padding: 20px;
+
 }
 
-/* Paragraph styling */
 .defi2_text
 {
     display: flex;
@@ -37,7 +34,6 @@ body
     text-align: center; /* Centers text */
 }
 
-/* Step description text styling */
 .defi2_step_text
 {
     display: flex;
@@ -48,10 +44,51 @@ body
     font-size: 15px;
 }
 
-/* Image size settings for different steps */
-.img_Step1, .img_Step2, .img_Step3, .img_Step4
+
+.img_Step1
 {
     width: 300px;
+    margin: 20px;
+}
+
+.img_Step2
+{
+    width: 300px;
+    margin: 10px;
+}
+
+.img_Step3
+{
+    width: 300px;
+    padding: 5px;
+}
+
+.img_Step4
+{
+    width: 300px;
+
+}
+
+.first_div_step
+{
+
+
+    text-align: center;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    border: #3D211A 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.second_div_step
+{
+    text-align: center;
+    background-color: #F5F5DC;
+    border-radius: 10px;
+    border: #3D211A 10px;
+    margin: 20px;
+    padding: 10px;
 }
 
 .img_Step2 { margin: 10px; }
@@ -84,6 +121,13 @@ body
 /* Container for code display */
 .block-defi2
 {
+    width: 65%;
+    margin-bottom: 10px;
+
+
+}
+
+.block-defi2{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,6 +137,7 @@ body
     border: #3D211A 10px;
     padding: 20px;
     max-width: 45%;
+    text-align: center;
 }
 
 /* Layout for images of the challenge steps */
@@ -100,18 +145,39 @@ body
 {
     display: flex;
     justify-content: space-evenly;
+
+}
+
+.img_corrected_code
+{
+    width: 50%;
+    margin-bottom: 10px;
+
 }
 
 /* Styling for the challenge difficulty stars */
 .img_Etoile { width: 100px; }
 .img_Etoile_2 { width: 53px; margin: 0 5px; }
 
-/* Title section layout */
+.img_Etoile
+{
+    width: 100px;
+
+}
+
+.img_Etoile_2
+{
+    width: 53px;
+   margin: 0 5px;
+
+}
+
 .Page_Title
 {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 /* Styling for the user reflection section */

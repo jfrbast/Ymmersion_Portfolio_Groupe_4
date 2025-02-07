@@ -21,10 +21,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: auto;
+    min-height: 25vh;
     background-color: #3D211A;
     width: 100%;
-    height: 25vh;
+    height: auto;
     padding: 15px 0;
 }
 

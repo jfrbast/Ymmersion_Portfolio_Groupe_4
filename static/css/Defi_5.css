@@ -1,0 +1,71 @@
+.challenge5 {
+    background-color: #6F4D38;
+}
+
+.Task5 {
+    text-align: center;
+    color: #F5F5DC;
+    font-family: 'Grosse_lettre', sans-serif;
+    padding-bottom: 20px;
+}
+
+.txttask5 {
+    gap: 20px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.taskmdp {
+    background: #3D211A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 10px;
+    height: min-content;
+    width: 49%;
+}
+.taskmdp2 {
+    background: #3D211A;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 200px;
+    height: min-content;
+    width: 49%;
+}
+.titre2c5 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #F5F5DC;
+}
+.titre1c5 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #F5F5DC;
+}
+
+.texte1c5{
+    font-size: 25px;
+    color: #F5F5DC;
+    line-height: 1.5;
+    font-family: 'Petite_lettre', sans-serif;
+}
+
+.textec5 {
+    background: #3D211A;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+
+.block-code{
+    display: flex;
+    justify-content: space-between;
+}

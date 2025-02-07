@@ -16,16 +16,14 @@ func main() {
 	fileServer := http.FileServer(http.Dir("./static"))
 	http.Handle("/static/", http.StripPrefix("/static/", fileServer))
 
-
 	// Définition des routes du site
-
 
 	http.HandleFunc("/portfabio", pages.Portfabio)
 	http.HandleFunc("/dashboard", pages.TableauDeBord)
 	http.HandleFunc("/team", pages.Team)
-  http.HandleFunc("/defi2", pages.Defi2)
+	http.HandleFunc("/challenge5", pages.Challenge5)
+	http.HandleFunc("/defi2", pages.Defi2)
 	http.HandleFunc("/", pages.HomePage)
-  
 
 	// Démarrage du serveur sur le port 8080
 	fmt.Println("Serveur démarré sur http://localhost:8080")

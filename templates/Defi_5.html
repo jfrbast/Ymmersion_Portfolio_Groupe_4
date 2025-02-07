@@ -1,0 +1,139 @@
+{{define "challenge5"}}
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 5</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css"
+		  id="themeStylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-dark.min.css">
+	<link rel="stylesheet" href="/static/css/common.css">
+	<link rel="stylesheet" href="/static/css/Defi_5.css">
+	<style>
+		pre {
+			overflow: auto;
+		}
+	</style>
+</head>
+
+<body class="challenge5">
+{{template "header"}}
+<h1 class="Task5">Challenge 5</h1>
+
+<div class="txttask5">
+	<div class="taskmdp">
+		<div class="titre1c5">Instructions</div>
+		<div class="textec5">
+			<p class="texte1c5">
+				Write a program that generate a random password between 8 and 12 characters :
+			</p>
+		</div>
+	</div>
+	<div class="block-code">
+		<div class="taskmdp">
+			<div class="titre2c5">My code</div>
+			<div class="code_c5">
+					<pre id="formattedCode" class="language-javascript">
+					<code>
+						package main
+
+	import (
+		"crypto/rand"
+		"fmt"
+		"math/big"
+	)
+
+	const passwordLength = 12
+	const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+
+	func generatePassword(length int) (string, error) {
+		password := make([]byte, length)
+		for i := range password {
+			randomIndex, err := rand.Int(rand.Reader, big.NewInt(int64(len(charset))))
+			if err != nil {
+				return "", err
+			}
+			password[i] = charset[randomIndex.Int64()]
+		}
+		return string(password), nil
+	}
+
+	func main() {
+		password, err := generatePassword(passwordLength)
+		if err != nil {
+			fmt.Println("Erreur:", err)
+			return
+		}
+		fmt.Println("Mot de passe:", password)
+	}
+					</code>
+					</pre>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+		</div>
+	</div>
+		<div class="taskmdp2">
+				<div class="titre2c5">Correction of the challenge</div>
+				<div class="code_c5">
+					<pre id="formattedCode1" class="language-javascript">
+					<code>
+	package main
+
+	import (
+		"crypto/rand"
+		"fmt"
+		"math/big"
+	)
+
+	// Caractères possibles pour le mot de passe
+	const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[]{}<>?/"
+
+	// Fonction pour générer un mot de passe aléatoire
+	func generatePassword(length int) (string, error) {
+		if length < 8 {
+			return "", fmt.Errorf("la longueur du mot de passe doit être d'au moins 8 caractères")
+		}
+
+		password := make([]byte, length)
+		for i := range password {
+			randIndex, err := rand.Int(rand.Reader, big.NewInt(int64(len(charset))))
+			if err != nil {
+				return "", err
+			}
+			password[i] = charset[randIndex.Int64()]
+		}
+
+		return string(password), nil
+	}
+
+	func main() {
+		var length int
+
+		fmt.Println("🔐 Générateur de mot de passe sécurisé")
+		fmt.Print("➡️  Entrez la longueur du mot de passe (min 8, max 16) : ")
+		fmt.Scan(&length)
+
+		if length < 8 || length > 16 {
+			fmt.Println("❌ Longueur invalide ! Utilisation d'une valeur par défaut : 12 caractères.")
+			length = 12
+		}
+
+		password, err := generatePassword(length)
+		if err != nil {
+			fmt.Println("Erreur :", err)
+			return
+		}
+
+		fmt.Println("✅ Mot de passe généré :", password)
+	}
+					</code>
+					</pre>
+				</div>
+		</div>
+	</div>
+</div>
+{{template "footer"}}
+</body>
+
+</html>
+{{end}}

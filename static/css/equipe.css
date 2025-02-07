@@ -13,14 +13,14 @@ body {
 }
 
 .team-title {
-    padding: 5px;
+    padding-top: 35px;
     text-align: center;
 }
 
 .swiper-container {
     width: 100%;
-    max-width: 800px;
-    height: 75vh;
+    max-width: 1200px;
+    height: 90vh;
 }
 .swiper-slide {
     display: flex;
@@ -34,7 +34,8 @@ body {
     background: #a07856;
     border: 4px solid #cbb799; 
     border-radius: 15px;
-    padding: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
@@ -46,17 +47,74 @@ body {
 }
 
 .image-box img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
-    border-radius: 10px;
-    border: 3px solid #a07856; 
+    border-radius: 15px;
+    border: 4px solid #a07856;
 }
 
 .image-box p {
     font-family: 'Grosse_lettre',sans-serif;
-    margin-top: 5px;
-    font-size: 25px;
+    margin-top: 10px;
+    font-size: 35px;
     color: #F5F5DC;
     font-weight: bold;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #F5F5DC;
+    padding: 30px;
+    background-color: rgba(160, 120, 86, 0.5);
+    border-radius: 50%;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    background-color: rgba(160, 120, 86, 0.8);
+}
+
+.swiper-button-prev {
+    left: 20px;
+}
+
+.swiper-button-next {
+    right: 20px;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(245, 245, 220, 0.5);
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #F5F5DC;
+}
+
+.defi-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #F5F5DC;
+    color: #6F4D38;
+    text-decoration: none;
+    border-radius: 25px;
+    font-family: 'Grosse_lettre', sans-serif;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.defi-button:hover {
+    background-color: #6F4D38;
+    color: #F5F5DC;
+    border: 2px solid #F5F5DC;
+    transform: scale(1.05);
+}
+
+

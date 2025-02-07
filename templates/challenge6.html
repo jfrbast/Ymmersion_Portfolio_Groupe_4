@@ -5,22 +5,59 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Source Code Formatter</title>
+        <title>Challenge6</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css" id="themeStylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-coy.min.css">
-        <style>
-            pre {
-                overflow: auto;
-            }
-        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-dark.min.css">
+
+		<link rel="stylesheet" href="/static/css/challenge6.css">
+		<link rel="stylesheet" href="/static/css/common.css">
+
     </head>
     <body>
-    <div class="container">
-        <h2 class="my-4">Formatted Code:</h2>
-        <pre id="formattedCode" class="language-javascript">
+	{{ template "header" }}
+	<h1 class="Titre-page6">CHALLENGE 6</h1>
+	<div class="container-texte">
+			<div class="cb-left">
+				<div class="step-card-6">
+					<div class="step-number-6">1</div>
+					<div class="step-title-6">RULES</div>
+					<p class="step-content-6">
+						The goal was to create a function that takes a password as a parameter and returns the strength of the password.
+						The password is considered strong if it has at least 8 characters, contains at least one uppercase letter and one special character.
+						Time limit: first to finish.
+					</p>
+				</div>
+				<div class="step-card-6">
+
+					<div class="step-number-6">2</div>
+					<div class="step-title-6">MY TRY</div>
+					<p class="step-content-6">
+						There is my try, I created a function that takes a password as a parameter and returns the strength of the password.
+						It was very stressful to do it because we were against the clock, not much time to think about the code.
+						So i take a little bit more time to finish it.
+					</p>
+				</div>
+
+				<div class="step-card-6">
+					<div class="step-number-6">3</div>
+					<div class="step-title-6">REFLECTION</div>
+					<p class="step-content-6">
+						I began by asking myself how I could do it, but as we were under pressure I started straight away. My big problem was that I didn't know unicode.isUpper, so that made me waste time.
+					</p>
+				</div>
+
+
+
+			</div>
+
+			<div class="step-card-6">
+				<div class="step-number-6">0</div>
+				<div class="step-title-6">MY CODE</div>
+				<div class="container2">
+        <pre id="formattedCode" class="language-javascript scrollbar">
             <code>
-                package main
+              package main
 
 import (
 	"fmt"
@@ -71,14 +108,117 @@ func motdepassediff(motdepasse string) string {
 
             </code>
         </pre>
-    </div>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
 
-    <!-- Include Prism.js for syntax highlighting -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+				</div>
+			</div>
+	</div>
 
-    <script>
 
-    </script>
+
+
+
+	<div class="container-texte">
+			<div class="cb-left">
+				<div class="step-card-6">
+					<div class="step-number-6">4</div>
+					<div class="step-title-6">CORRECTION</div>
+					<p class="step-content-6">
+						This is the correction of the code, optimized and more readable. It's another way to do it. but always using unicode.
+					</p>
+				</div>
+
+				<div class="step-card-6">
+					<div class="step-number-6">5</div>
+					<div class="step-title-6">MY FEELING ABOUT</div>
+					<p class="step-content-6">
+						The difficulty of this challenge is moderate like 2/5. The big source of problem for anyone in the room was the time, we code against the clock and the other.
+					</p>
+				</div>
+
+
+
+			</div>
+
+			<div class="step-card-6">
+				<div class="step-number-6">0</div>
+				<div class="step-title-6">CORRECTION</div>
+				<div class="container3">
+        <pre id="formattedCode" class="language-javascript scrollbar">
+            <code>
+package main
+
+	import (
+	"bufio"
+	"fmt"
+	"os"
+	"strings"
+	"unicode"
+	)
+
+	// Fonction pour évaluer la force du mot de passe
+	func checkPasswordStrength(password string) string {
+	var hasUpper, hasLower, hasDigit, hasSpecial bool
+	specialChars := "!@#$%^&*()-_=+[]{}<>?/"
+
+	// Vérifier chaque caractère du mot de passe
+	for _, char := range password {
+	switch {
+	case unicode.IsUpper(char):
+	hasUpper = true
+	case unicode.IsLower(char):
+	hasLower = true
+	case unicode.IsDigit(char):
+	hasDigit = true
+	case strings.ContainsRune(specialChars, char):
+	hasSpecial = true
+	}
+	}
+
+	// Évaluer la force
+	length := len(password)
+	switch {
+	case length >= 12 && hasUpper && hasLower && hasDigit && hasSpecial:
+	return "💪 Fort (Bien sécurisé) 🔒"
+	case length >= 8 && ((hasUpper && hasLower && hasDigit) || (hasLower && hasDigit && hasSpecial)):
+	return "⚠️ Moyen (Ajoutez des majuscules et des symboles)"
+	default:
+	return "❌ Faible (Trop court ou manque de diversité)"
+	}
+	}
+
+	func main() {
+	scanner := bufio.NewScanner(os.Stdin)
+
+	fmt.Println("🔍 Vérificateur de Force de Mot de Passe")
+	fmt.Println("➡️  Entrez un mot de passe (ou tapez 'exit' pour quitter) :")
+
+	for {
+	fmt.Print("> ")
+	scanner.Scan()
+	password := scanner.Text()
+
+	// Vérifier si l'utilisateur veut quitter
+	if strings.ToLower(password) == "exit" {
+	fmt.Println("👋 Merci d'avoir utilisé le vérificateur ! À bientôt !")
+	break
+	}
+
+	// Vérifier la force du mot de passe
+	strength := checkPasswordStrength(password)
+	fmt.Printf("🔑 Sécurité : %s\n\n", strength)
+	}
+	}
+            </code>
+        </pre>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+
+
+				</div>
+			</div>
+	</div>
+
+	{{ template "footer" }}
     </body>
     </html>
 

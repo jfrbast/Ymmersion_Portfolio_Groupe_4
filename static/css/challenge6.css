@@ -1,4 +1,120 @@
 body{
     background: #6F4D38;
+    min-height: 100vh;
+    height: auto;
+
+
+}
+
+
+.container3{
+    margin: 0;
+    width: 37vw;
+    height: 75vh;
+    padding : 30px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: thin;
+}
+
+
+.container2{
+    margin: 0;
+    width: 37vw;
+    height: 75vh;
+    padding : 30px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: thin;
+}
+
+
+.container-6 {
+
+    gap: 20px;
+    max-width: 700px;
+    width: auto;
+    margin: auto;
+    display: grid;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+
+
+.step-card-6 {
+    background: #3D211A;
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.step-number-6 {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: #A07856;
+    color: #F5F5DC;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.step-title-6 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #F5F5DC;
+    font-family: Grosse_lettre, sans-serif;
+}
+
+.step-content-6 {
+    font-size: 14px;
+    color: #F5F5DC;
+    line-height: 1.5;
+    font-family: 'Petite_lettre', sans-serif;
+}
+
+
+.Titre-page6{
+    font-family: 'Grosse_lettre', sans-serif;
+    color: #F5F5DC;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.container-texte{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
+    background: #6F4D38;
+}
+
+.cb-left{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
 
 }

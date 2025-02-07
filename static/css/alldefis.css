@@ -17,16 +17,15 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin-bottom: 300px ;
-
+    margin-bottom: 300px;
 }
 
 .alldefis-title {
-    font-family: Grosse_lettre, Arial, sans-serif;
-    color: #F5F5DC;
     text-align: center;
+    font-family: 'Grosse_lettre', sans-serif;
+    color: #F5F5DC;
+
     padding: 15px;
-    margin-bottom: 20px;
 }
 
 .grid {
@@ -77,8 +76,51 @@ body {
     font-size: 1.2em;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
 }
 
+.card-front1{
+    background-color: #40ac2c;
+    background-image: url("../images/Userbox_creeper.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-front2{
+    background-color:#180e30 ;
+    background-image:url("../images/guess_my_number.png") ;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.card-front3{
+    background-image: url("../images/palindrome.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.card-front4{
+    background-color: #1d1e1f;
+    background-image: url("../images/analyse_text.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center top;
+
+}
+.card-front5{
+    background-image: url("../images/hacker-using-phone.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.card-front6{
+    background-image: url("../images/hacker-using-phone.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
 .card-back {
     transform: rotateY(180deg);
     background-color: #8b674a;

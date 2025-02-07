@@ -52,7 +52,18 @@ func Defi2(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func Challenge6(w http.ResponseWriter, r *http.Request) {
+
+func Challenge5(w http.ResponseWriter, r *http.Request) {
+
+	err := templates.Tpl.ExecuteTemplate(w, "challenge5", nil)
+  if err != nil {
+		log.Println("Erreur template accueil:", err)
+		http.Error(w, "Erreur serveur", http.StatusInternalServerError)
+	}
+}
+
+  
+  func Challenge6(w http.ResponseWriter, r *http.Request) {
 	err := templates.Tpl.ExecuteTemplate(w, "challenge6", nil)
 	if err != nil {
 		log.Println("Erreur template accueil:", err)
@@ -92,6 +103,7 @@ func Challenge3(w http.ResponseWriter, r *http.Request) {
 func Challenge4(w http.ResponseWriter, r *http.Request) {
 
 	err := templates.Tpl.ExecuteTemplate(w, "challenge4", nil)
+
 	if err != nil {
 		log.Println("Erreur lors de l'exécution du template :", err)
 

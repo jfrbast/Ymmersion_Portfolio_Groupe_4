@@ -156,10 +156,17 @@ body {
     }
 }
 
-.content {
+
+
+.texte_avant{
     font-family: 'Petite_lettre', sans-serif;
     font-size: 18px;
     padding: 10px;
-    line-height: 1.5;
     color: #F5F5DC;
+}
+
+.card-button{
+    font-family: 'Grosse_lettre', sans-serif;
+
+
 }

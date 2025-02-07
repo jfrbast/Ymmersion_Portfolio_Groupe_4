@@ -155,3 +155,11 @@ body {
         grid-template-rows: repeat(6, 1fr);
     }
 }
+
+.content {
+    font-family: 'Petite_lettre', sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    line-height: 1.5;
+    color: #F5F5DC;
+}

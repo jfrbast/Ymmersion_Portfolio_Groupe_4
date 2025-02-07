@@ -10,70 +10,76 @@
 </head>
 <body>
 {{ template "header" }}
+    <main class="colonne_1">
+    <div>
+        <h1 class="defi2_main_title"> Challenge n°2 : Guess my number ! </h1>
+        <div class="Page_Title">
+            <h1 class="defi2_main_title">Difficulty :</h1>
+            <img class="img_Etoile" src="/static/images/etoile.png" alt='star'>
+            <img class="img_Etoile_2" src="/static/images/etoile_2.png" alt='star'>
+            <img class="img_Etoile_2" src="/static/images/etoile_2.png" alt='star'>
+            <img class="img_Etoile_2" src="/static/images/etoile_2.png" alt='star'>
+            <img class="img_Etoile_2" src="/static/images/etoile_2.png" alt='star'>
+        </div>
+        <h2 class="defi2_title"> Challenge rule: </h2>
+        <p class="defi2_text"> Create a program that generates a random number.
+            The user must guess the number.<br>
+            At each attempt, the program indicates whether the number entered is too small or too large, until the user finds the right answer.</p>
 
-    <h1 class="defi2_main_title"> Challenge n°2 : Guess my number ! </h1>
-    <div class="Page_Title">
-        <h1 class="defi2_main_title">Difficulty :</h1>
-    <img class="img_Etoile" src="/static/images/etoile.png" alt='star'>
-    <img class="img_Etoile_2" src="/static/images/etoile_2.png" alt='star'>
-    <img class="img_Etoile_3" src="/static/images/etoile_3.png" alt='star'>
-    <img class="img_Etoile_4" src="/static/images/etoile_4.png" alt='star'>
-    <img class="img_Etoile_5" src="/static/images/etoile_5.png" alt='star'>
-    </div>
-<h2 class="defi2_title"> Challenge rule: </h2>
-<p class="defi2_text"> Create a program that generates a random number.
-    The user must guess the number.<br>
-    At each attempt, the program indicates whether the number entered is too small or too large, until the user finds the right answer.</p>
-
-<h2 class="defi2_title"> Stages of the challenge and reflection :</h2>
-<p class = defi2_text> to complete this challenge, I decided to take it one step at a time,<br> first I asked myself, where to start.</p>
-<br>
-<div class="first_div_step">
-    <li class="defi2_text"> Step 1: the program asks us to choose a number between 0 and 100 <br>
-        create a solution variable to generate a random number between 0 and 100  </li>
-    <img class="img_Step1" src="/static/images/Step1.png" alt= Step1>
-</div>
-<div class="second_div_step">
-    <li class="defi2_text"> Step 2: we create a Try variable that is a number and then we make it show in the terminal <br> </li>
-
-    <img class="img_Step2" src="/static/images/Step%202.png" alt= Step2>
-</div>
-<div class="third_div_step">
-    <li class="defi2_text"> Step 3: if Try is smaller than the solution then the program will return us “It’s bigger!” <br>
-        Conversely if Try is larger than the solution then the program will return to us “It’s smaller </li>
-    <img class="img_Step3" src="/static/images/Step 3.png" alt= Step3>
-</div>
-
-<div class="fourth_div_step">
-    <li class="defi2_text"> Step 4: if we manage to find the right number, the program will say "Well done!"</li>
-    <img class="img_Step4" src="/static/images/Step4.png" alt= Step4>
-</div>
-<br>
-<h2 class="defi2_title"> Code created and corrected: </h2>
-<p class="defi2_text"> Here is the code that was created and its detailed correction. </p>
-
-<div class="block-img">
-    <div class = "block-defi2">
-        <img class="img_real_code" src="/static/images/realcode.png" alt= Step4>
-        <p class="defi2_code_text"> here's the completed part </p>
+        <h2 class="defi2_title"> Stages of the challenge and reflection :</h2>
+        <p class = defi2_text> to complete this challenge, I decided to take it one step at a time,<br> first I asked myself, where to start.</p>
     </div>
 
-    <div class="block-defi2">
-        <img class="img_corrected_code" src="/static/images/Corrected_code.png" alt= Step4>
-        <p class="defi2_code_text"> and here the corrected code completed <br>
-            through the correction I was able to understand how to use scans as well as the use of rand.</p>
-    </div>
-</div>
-<br>
+        <div class="first_div_step">
+            <li class="defi2_step_text"> Step 1: the program asks us to choose a number between 0 and 100 <br>
+                create a solution variable to generate a random number between 0 and 100  </li>
+            <img class="img_Step1" src="/static/images/Step1.png" alt= Step1>
+        </div>
 
-<div class="myfeeling">
-    <h2 class="defi2_title"> My feelings: </h2>
-    <p class="defi2_text"> at the time I did not manage to understand the challenge, <br>
-        I found it complicated despite the few lines of code that I wrote. <br>
-        it was after working on the correction that I really understood and learned about my challenge. </p>
-    </div>
+        <div class="second_div_step">
+            <li class="defi2_step_text"> Step 2: we create a Try variable that is a number and then we make it show in the terminal <br> </li>
 
-<br>
+            <img class="img_Step2" src="/static/images/Step%202.png" alt= Step2>
+        </div>
+
+        <div class="third_div_step">
+            <li class="defi2_step_text"> Step 3: if Try is smaller than the solution then the program will return us “It’s bigger!” <br>
+                Conversely if Try is larger than the solution then the program will return to us “It’s smaller </li>
+            <img class="img_Step3" src="/static/images/Step 3.png" alt= Step3>
+        </div>
+
+        <div class="fourth_div_step">
+            <li class="defi2_step_text"> Step 4: if we manage to find the right number, the program will say "Well done!"</li>
+            <img class="img_Step4" src="/static/images/Step4.png" alt= Step4>
+        </div>
+
+        <div class="step_code">
+            <h2 class="defi2_title"> Code created and corrected: </h2>
+            <p class="defi2_text"> Here is the code that was created and its detailed correction. </p>
+        </div>
+
+        <div class="block-img">
+            <div class = "block-defi2">
+                <img class="img_real_code" src="/static/images/realcode.png" alt= Step4>
+                <p class="defi2_step_text"> here's the completed part </p>
+            </div>
+
+            <div class="block-defi2">
+                <img class="img_corrected_code" src="/static/images/Corrected_code.png" alt= Step4>
+                <p class="defi2_step_text"> and here the corrected code completed <br>
+                    through the correction I was able to understand <br>
+                    how to use scans as well as the use of rand.
+                </p>
+            </div>
+        </div>
+
+        <div class="myfeeling">
+            <h2 class="defi2_title"> My feelings: </h2>
+            <p class="defi2_text"> at the time I did not manage to understand the challenge, <br>
+                I found it complicated despite the few lines of code that I wrote. <br>
+                it was after working on the correction that I really understood and learned about my challenge. </p>
+        </div>
+    </main>
 {{ template "footer"}}
 </body>
 </html>

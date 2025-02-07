@@ -18,12 +18,18 @@ func main() {
 
 	// Définition des routes du site
 
-	http.HandleFunc("/challenge6", pages.Challenge6)
+	
 	http.HandleFunc("/challenge1", pages.Defi1)
+  http.HandleFunc("/challenge2", pages.Defi2)
+  
+  http.HandleFunc("/challenge4", pages.Challenge4)
+  
+  http.HandleFunc("/challenge6", pages.Challenge6)
 	http.HandleFunc("/portfabio", pages.Portfabio)
 	http.HandleFunc("/dashboard", pages.TableauDeBord)
 	http.HandleFunc("/team", pages.Team)
-	http.HandleFunc("/challenge2", pages.Defi2)
+	
+	
 	http.HandleFunc("/all-defis", pages.Alldefis)
 	http.HandleFunc("/", pages.HomePage)
 

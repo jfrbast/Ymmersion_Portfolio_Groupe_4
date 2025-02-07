@@ -26,14 +26,18 @@
     width: 100%;
     height: auto;
     padding: 15px 0;
+    line-height: normal;
+    box-sizing: content-box;
 }
 
-/* Liste des liens dans le footer */
+
 .fm-liste {
+    font-family: 'Petite_lettre', sans-serif;
     color: #CBB799;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin:0;
     padding: 0 75px;
 }
 
@@ -57,16 +61,20 @@
     font-family: 'Petite_lettre', sans-serif;
     color: #CBB799;
     padding: 15px 0;
+    margin : 0 ;
 }
 
 /* Titres du footer */
 .footer-Hliste {
     font-family: 'Grosse_lettre', sans-serif;
+    font-size : 20px;
     color: #F5F5DC;
+    margin:  0 ;
 }
 
 /* Organisation principale du footer */
 .footer-main {
+    margin : 0 ;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;

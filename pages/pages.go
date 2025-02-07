@@ -52,6 +52,13 @@ func Defi2(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+func Challenge6(w http.ResponseWriter, r *http.Request) {
+	err := templates.Tpl.ExecuteTemplate(w, "challenge6", nil)
+	if err != nil {
+		log.Println("Erreur template accueil:", err)
+		http.Error(w, "Erreur serveur", http.StatusInternalServerError)
+	}
+}
 
 func Defi1(w http.ResponseWriter, r *http.Request) {
 	err := templates.Tpl.ExecuteTemplate(w, "defi_1", nil)
@@ -59,13 +66,13 @@ func Defi1(w http.ResponseWriter, r *http.Request) {
 		log.Println("Erreur lors de l'écution du template :", err)
 	}
 }
+
 // Page "All-defis"
 func Alldefis(w http.ResponseWriter, r *http.Request) {
 
 	err := templates.Tpl.ExecuteTemplate(w, "alldefis", nil)
 	if err != nil {
 		log.Println("Erreur lors de l'exécution du template :", err)
-
 
 		http.Error(w, "Erreur interne du serveur", http.StatusInternalServerError)
 	}
